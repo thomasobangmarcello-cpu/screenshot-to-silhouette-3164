@@ -28,3 +28,8 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Application structure
+- Keep the demo on the index route with React local state and pure matching/readiness functions in `src/lib/referral-demo.ts`; this makes the prototype deterministic and independently testable without services.
+- Define presentation tokens and reusable dashboard styles in `src/styles.css`, and use the shared Button and Dialog controls for accessible interactions.
+- Referral passes and copied links are explicitly demo credentials, not public verification endpoints; never imply a backend exists.

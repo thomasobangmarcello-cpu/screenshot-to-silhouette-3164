@@ -16,6 +16,12 @@ const buttonVariants = cva(
         secondary: "bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        success: "bg-success text-success-foreground hover:bg-success/90",
+        skill:
+          "border border-input bg-card text-muted-foreground hover:border-primary hover:text-primary shadow-none",
+        selected:
+          "border border-primary/25 bg-primary-soft text-primary hover:bg-primary/15 shadow-none",
+        persona: "bg-primary-soft text-primary hover:bg-primary/15 shadow-none",
       },
       size: {
         default: "h-9 px-4 py-2",
